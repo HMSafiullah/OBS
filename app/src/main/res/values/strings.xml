@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">Old Book Store</string>
+    <string name="splash_screen_intro">Buy Cheaper books and free books for needy students</string>
+    <string name="splash_screen_main_heading">OBS</string>
+    <string name="splash_screen_sub_heading">Old Book Store</string>
+    <string name="main_welcome">Welcome to OBS</string>
+    <string name="google_sigin">Continue with Google</string>
+    <string name="phoneNumber_sigin">Continue with Phone</string>
+    <string name="sigin_policy1">By cicking on continue, you are accepting</string>
+    <string name="sigin_policy2">OBS Terms and Conditions and Privacy</string>
+    <string name="sigin_policy3">policy</string>
+    <string name="verification">Verification</string>
+    <string name="sub_main_verficiation">Enter the verification code we sent to</string>
+    <string name="resend_detail">If you did not received a code</string>
+    <string name="resend">Resend</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="book_title">Enter Your Book Title</string>
+    <string name="book_location">Book Your Location</string>
+    <string name="school">School</string>
+    <string name="matric">Matric</string>
+    <string name="Inter">Inter</string>
+    <string name="other">Other</string>
+    <string name="donations">Donations/Free Books(For Poor Students)</string>
+    <string name="home">Home</string>
+    <string name="inbox">Inbox</string>
+    <string name="sell">Sell</string>
+    <string name="ads">Ads</string>
+    <string name="profile">Profile</string>
+    <string name="dashboard">Dashboard</string>
+
+    <string name="category">Select Category</string>
+    <string name="bachelor">Bachelor</string>
+    <string name="master">Master</string>
+    <string name="islamic">Islamic</string>
+    <string name="novels">Novels</string>
+    <string name="category_def">Select &quot;Donations&quot; if you want to help poor students who cannot afford</string>
+    <string name="price">Price</string>
+    <string name="donation">Donation</string>
+    <string name="next">Next</string>
+
+    <string name="upload_books">Upload Books</string>
+    <string name="add_details">Add Details</string>
+    <string name="add_image">Add Image</string>
+    <string name="booktitle">Book Title</string>
+    <string name="description">Description</string>
+    <string name="location_choose">Choose Location</string>
+    <string name="publish">Publish</string>
+    <string name="web_client_id">43581612461-q1ikjfgb5qmssk4dajhf3ahnvnevsr3u.apps.googleusercontent.com</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="hint_otp_number">+9233XXXXXXXX</string>
+    <string name="chat">chat</string>
+    <string name="report">Report</string>
+    <string name="complete_profile">Complete Profile</string>
+    <string name="name">Name</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="update">Update</string>
+    <string name="dial">Dial</string>
+    <string name="feedback">Feedback</string>
+    <string name="all_users_list">All Users</string>
+    <string name="reported_users_list">Reported Users</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_admin">Login Admin</string>
+    <string name="api_key">AIzaSyB_kk_-3YX1w8xmeZfKry4XhSqFV-GjCaY</string>
+    <string-array name="locations">
+        <item>Lahore</item>
+        <item>Faisalabad</item>
+        <item>Rawalpindi</item>
+        <item>Multan</item>
+        <item>Gujranwala</item>
+        <item>Hyderabad</item>
+        <item>Peshawar</item>
+        <item>Islamabad</item>
+        <item>Quetta</item>
+        <item>Sargodha</item>
+        <item>Sialkot</item>
+        <item>Bahawalpur</item>
+        <item>Sukkur</item>
+        <item>Kandhkot</item>
+        <item>Sheikhupura</item>
+        <item>Mardan</item>
+        <item>Gujrat</item>
+        <item>Larkana</item>
+        <item>Kasur</item>
+        <item>Rahim Yar Khan</item>
+        <item>Sahiwal</item>
+        <item>Okara</item>
+        <item>Wah Cantonment</item>
+        <item>Dera Ghazi Khan</item>
+        <item>Mingora</item>
+        <item>Mirpur Khas</item>
+        <item>Chiniot</item>
+        <item>Nawabshah</item>
+        <item>Kamoke</item>
+        <item>Burewala</item>
+        <item>Jhelum</item>
+        <item>Sadiqabad</item>
+        <item>Khanewal</item>
+        <item>Hafizabad</item>
+        <item>Kohat</item>
+        <item>Jacobabad</item>
+        <item>Shikarpur</item>
+        <item>Muzaffargarh</item>
+        <item>Khanpur</item>
+        <item>Gojra</item>
+        <item>Bahawalnagar</item>
+        <item>Abbottabad</item>
+        <item>Muridke</item>
+        <item>Pakpattan</item>
+        <item>Khuzdar</item>
+        <item>Jaranwala</item>
+        <item>Chishtian</item>
+        <item>Daska</item>
+        <item>Mandi Bahauddin</item>
+        <item>Ahmadpur East</item>
+        <item>Kamalia</item>
+        <item>Tando Adam</item>
+        <item>Khairpur</item>
+        <item>Dera Ismail Khan</item>
+        <item>Vehari</item>
+        <item>Nowshera</item>
+        <item>Dadu</item>
+        <item>Wazirabad</item>
+        <item>Khushab</item>
+        <item>Charsada</item>
+        <item>Swabi</item>
+        <item>Chakwal</item>
+        <item>Mianwali</item>
+        <item>Tando Allahyar</item>
+        <item>Kot Adu</item>
+        <item>Farooka</item>
+        <item>Chichawatni</item>
+        <item>Vehari</item>
+        <item>Mansehra</item>
+
+
+    </string-array>
+
+</resources>

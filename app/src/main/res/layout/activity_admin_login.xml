@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:weightSum="10"
+    android:background="@drawable/gradient_screen_splash"
+    android:orientation="vertical"
+    tools:context=".activity.AdminLogin">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="@string/login"
+        android:gravity="center"
+        android:textSize="@dimen/_30sdp"/>
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/username"
+        android:paddingStart="@dimen/_10sdp"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:background="@drawable/rounded_corners_edit_text"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/_30sdp"
+        android:hint="@string/password"
+        android:paddingStart="@dimen/_10sdp"
+        android:inputType="textPassword"
+        android:textColorHint="@color/light_gray"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_corners_edit_text"/>
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/login"
+        android:background="@drawable/round_button_submit"
+        android:layout_marginHorizontal="@dimen/_30sdp"/>
+
+
+</LinearLayout>

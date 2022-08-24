@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_screen_splash"
+    tools:context=".activity.ui.ads.AdsFragment">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_5sdp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ads"
+                    android:textSize="@dimen/_25sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginVertical="@dimen/_30sdp"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/paid_ads_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:orientation="horizontal"
+                    app:reverseLayout="true" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/donations"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textColor="@color/white" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/free_ads_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:orientation="horizontal"
+                    app:reverseLayout="true" />
+
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+
+    </ScrollView>
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"/>
+
+</RelativeLayout>

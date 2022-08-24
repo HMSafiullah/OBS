@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_screen_splash"
+    tools:context=".activity.ChatActivity"
+    android:padding="@dimen/_10sdp"
+    android:paddingVertical="@dimen/_10sdp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:reverseLayout="true"
+        android:layout_marginBottom="@dimen/_60sdp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:layout_weight="6"
+        android:layout_marginVertical="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/message_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textColor="@color/black"
+            android:hint="Type Message"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:background="@drawable/rounded_corners_edit_text"/>
+        <ImageView
+            android:id="@+id/send_message_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/dark"
+            android:paddingVertical="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:src="@drawable/send_message"/>
+    </LinearLayout>
+</FrameLayout>

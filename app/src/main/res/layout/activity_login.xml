@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.mr.oldbookstore.viewModel.LoginViewModel" />
+    </data>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_screen_splash"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.LoginActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- ToolBar widget -->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#008080"
+                android:minHeight="?attr/actionBarSize"
+                app:titleTextColor="@color/white" >
+
+                <ImageButton
+                    android:id="@+id/image_button_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                    android:background="@color/transparent"
+                    android:onClick="@{()->viewmodel.onBackButtonClicked()}"
+                    bind:backMessage="@{viewmodel.backMessage}"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:gravity="center"/>
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verification"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        android:gravity="center"
+        android:layout_marginVertical="@dimen/_50sdp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sub_main_verficiation"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/_12sdp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="@string/hint_otp_number"
+            android:textColorHint="@color/light_gray"
+            android:layout_weight="5"
+            android:text="@={viewmodel.userPhoneNumber}"
+            android:paddingStart="@dimen/_10sdp"
+            android:background="@drawable/rounded_corners_edit_text"
+            android:textSize="@dimen/_15sdp"
+            android:paddingVertical="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="@dimen/_10sdp"/>
+        <Button
+            android:id="@+id/send_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:onClick="@{()->viewmodel.onSendOTPButtonClicked()}"
+            bind:otpMessage="@{viewmodel.otpMessage}"
+            android:background="@drawable/rounded_button_send_otp"
+            android:text="Send OTP"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="6"
+        android:layout_marginVertical="@dimen/_20sdp">
+        <EditText
+            android:id="@+id/otp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:text="@={viewmodel.userOtp_1}"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/_2sdp"
+            android:background="@drawable/circular_shaped_otp" />
+        <EditText
+            android:id="@+id/otp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="@={viewmodel.userOtp_2}"
+            android:layout_marginHorizontal="@dimen/_2sdp"
+            android:background="@drawable/circular_shaped_otp" />
+        <EditText
+            android:id="@+id/otp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="@={viewmodel.userOtp_3}"
+            android:layout_marginHorizontal="@dimen/_2sdp"
+            android:background="@drawable/circular_shaped_otp" />
+        <EditText
+            android:id="@+id/otp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="@={viewmodel.userOtp_4}"
+            android:layout_marginHorizontal="@dimen/_2sdp"
+            android:background="@drawable/circular_shaped_otp" />
+        <EditText
+            android:id="@+id/otp5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="@={viewmodel.userOtp_5}"
+            android:layout_marginHorizontal="@dimen/_2sdp"
+            android:background="@drawable/circular_shaped_otp" />
+        <EditText
+            android:id="@+id/otp6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="@={viewmodel.userOtp_6}"
+            android:layout_marginHorizontal="@dimen/_2sdp"
+            android:background="@drawable/circular_shaped_otp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resend_detail"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+        <TextView
+            android:id="@+id/resend_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resend"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/red"
+            android:layout_marginHorizontal="@dimen/_4sdp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <Button
+            android:id="@+id/submit_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:background="@drawable/round_button_submit"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginVertical="@dimen/_60sdp"
+            android:onClick="@{()->viewmodel.onSubmitButtonClicked()}"
+            bind:toastMessage="@{viewmodel.toastMessage}"/>
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/inbox"
+        android:enabled="true"
+        android:icon="@drawable/icons8_facebook_messenger_18___"
+        android:title="@string/inbox"/>
+    <item
+        android:id="@+id/sell"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_add_circle_outline_24"
+        android:title="@string/sell"/>
+    <item
+        android:id="@+id/ads"
+        android:enabled="true"
+        android:icon="@drawable/icons8_christmas_gift_18___"
+        android:title="@string/ads"/>
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_outline_person_outline_24"
+        android:title="@string/profile"/>
+</menu>
